@@ -33,12 +33,10 @@ console.log('First animal is', animalArray[0])
 console.log('Second animal is:', animalArray[1]);
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-console.log('Third animal is:', animalArray[3]);
+console.log('Last animal is:', animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-
-
 
 // 4. Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -68,7 +66,8 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 foodArray.unshift('chocolate');
-console.log('Added a new fave food to the beginning: ${foodArray}');
+// any reason why the concantation was switched here?
+console.log(`Added a new fave food to the beginning: ${foodArray}`);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -77,6 +76,9 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+removedFood = foodArray.shift();
+console.log('Removed the first food', removedFood);
+console.log('The foods are now:', foodArray);
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
